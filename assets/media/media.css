@@ -1,0 +1,250 @@
+/* Mobile Styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  header .logo {
+    width: 50px;
+    margin-left: 20px;
+  }
+  header button {
+    margin-right: 1rem;
+  }
+  .hero-section {
+    height: 100vh;
+  }
+  .hero-section .main-content {
+    top: 40%;
+  }
+  .hero-section .main-content div h1 {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 10px;
+  }
+  .hero-section .main-content div p {
+    font-size: 18px;
+  }
+  .hero-section .hand {
+    bottom: 20%;
+    left: 10%;
+  }
+  .sec-section {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    margin-block: 0px;
+    padding-block: 20px;
+  }
+  .sec-section p {
+    width: 90%;
+    padding-block: 30px;
+    margin: 0 auto;
+  }
+  .sec-section .gearbox1 {
+    width: 100%;
+    overflow-y: hidden;
+  }
+  .sec-section .gearbox1 .gear3 {
+    width: 100px;
+    position: absolute;
+    right: 20px;
+    bottom: -200px;
+  }
+  .sec-section .gearbox1 .gear4 {
+    width: 70px;
+    position: absolute;
+    right: 95px;
+    bottom: -240px;
+  }
+  .gearbox {
+    height: 230px;
+    position: relative;
+    overflow-y: hidden;
+  }
+  .gearbox .gear1 {
+    width: 100px;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+  }
+  .gearbox .gear2 {
+    width: 70px;
+    position: absolute;
+    left: 110px;
+    top: 100px;
+  }
+  .third-section {
+    height: -moz-max-content;
+    height: max-content;
+    padding-block: 50px;
+    overflow: hidden;
+  }
+  .third-section .m3 {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Ensure the items wrap on smaller screens */
+  }
+  .third-section .m3 .m3-1,
+  .third-section .m3 .m3-2 {
+    background: linear-gradient(45deg, #999 5%, #fff 10%, #ccc 30%, #ddd 50%, #ccc 70%, #fff 80%, #999 95%);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 30px;
+    padding: 20px; /* Add padding for better appearance */
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+    max-width: 90%;
+    border-radius: 10px; /* Ensure items don't exceed a certain width */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    text-align: center; /* Center text inside the div */
+    border: 1px solid #ccc; /* Optional: Border for visibility */
+  }
+  .third-section .m3 .m3-1 .para,
+  .third-section .m3 .m3-2 .para {
+    height: 170px;
+    width: 100%;
+  }
+  .third-section .m3 .m3-1 .sicon,
+  .third-section .m3 .m3-2 .sicon {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+  }
+}
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  header {
+    overflow: hidden;
+  }
+  header .logo {
+    width: 100px;
+    margin-left: 140px;
+  }
+  header button {
+    margin-right: 9rem;
+  }
+  .hero-section {
+    overflow: hidden;
+    height: 90vh;
+  }
+  .hero-section .main-content {
+    top: 40%;
+  }
+  .hero-section .main-content div h1 {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 10px;
+  }
+  .hero-section .main-content div p {
+    font-size: 18px;
+  }
+  .hero-section .hand {
+    bottom: 20%;
+    left: 10%;
+  }
+  .sec-section {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    margin-block: 0px;
+    padding-block: 20px;
+  }
+  .sec-section p {
+    width: 90%;
+    padding-block: 30px;
+    margin: 0 auto;
+  }
+  .sec-section .gearbox1 {
+    width: 100%;
+    overflow-y: hidden;
+  }
+  .sec-section .gearbox1 .gear3 {
+    width: 100px;
+    position: absolute;
+    right: 20px;
+    bottom: -200px;
+  }
+  .sec-section .gearbox1 .gear4 {
+    width: 70px;
+    position: absolute;
+    right: 95px;
+    bottom: -240px;
+  }
+  .gearbox {
+    height: 230px;
+    position: relative;
+    overflow-y: hidden;
+  }
+  .gearbox .gear1 {
+    width: 100px;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+  }
+  .gearbox .gear2 {
+    width: 70px;
+    position: absolute;
+    left: 110px;
+    top: 100px;
+  }
+  .third-section {
+    height: -moz-max-content;
+    height: max-content;
+    padding-block: 50px;
+    overflow: hidden;
+  }
+  .third-section .m3 {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Ensure the items wrap on smaller screens */
+  }
+  .third-section .m3 .m3-1,
+  .third-section .m3 .m3-2 {
+    background: linear-gradient(45deg, #999 5%, #fff 10%, #ccc 30%, #ddd 50%, #ccc 70%, #fff 80%, #999 95%);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 30px;
+    padding: 20px; /* Add padding for better appearance */
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+    max-width: 90%;
+    border-radius: 10px; /* Ensure items don't exceed a certain width */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    text-align: center; /* Center text inside the div */
+    border: 1px solid #ccc; /* Optional: Border for visibility */
+  }
+  .third-section .m3 .m3-1 .para,
+  .third-section .m3 .m3-2 .para {
+    height: 170px;
+    width: 100%;
+  }
+  .third-section .m3 .m3-1 .sicon,
+  .third-section .m3 .m3-2 .sicon {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+  }
+}
+/* Desktop Styles */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  .container {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,309 @@
+// $text-offwhite: #f5f5f5;
+// $text-color: #273e58;
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  header {
+    .logo {
+        width: 50px;
+        margin-left: 20px;
+      }
+      button{
+        margin-right: 1rem;
+      }
+  }
+  .hero-section{
+    // background-color: red;
+  height: 100vh;
+
+    .main-content{
+      top:40%;
+      div{
+        h1{
+          font-size: 60px;
+          line-height: 60px;
+          margin-bottom: 10px;
+        }
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+   .hand{
+    bottom: 20%;
+    left: 10%;
+   }
+  }
+  
+.sec-section {
+  height: 300px;
+  // background-color: red;
+  // overflo: hidden;
+  width: 100%;
+  position: relative;
+  margin-block: 0px;
+  padding-block: 20px;
+  p {
+    width: 90%;
+    padding-block: 30px;
+    margin: 0 auto;
+  }
+  .gearbox1 {
+    width: 100%;
+    overflow-y: hidden;
+    .gear3 {
+      width: 100px;
+      position: absolute;
+      right: 20px;
+      bottom: -200px;
+      
+    }
+    .gear4 {
+      width: 70px;
+      position: absolute;
+      right: 95px;
+      bottom: -240px;
+    }
+  }
+}
+
+.gearbox {
+  height: 230px;
+  position: relative;
+  overflow-y: hidden;
+
+  .gear1 {
+    width: 100px;
+    position: absolute;
+    left: 20px;
+    bottom:10px
+  }
+  .gear2 {
+    width: 70px;
+    position: absolute;
+    left: 110px;
+    top: 100px;
+  }
+}
+
+.third-section {
+  height: max-content;
+  padding-block: 50px;
+  overflow: hidden;
+
+  .m3 {
+    // background-color: red;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Ensure the items wrap on smaller screens */
+    // height: 100vh;
+    .m3-1,
+    .m3-2 {
+      background: linear-gradient(
+        45deg,
+        #999 5%,
+        #fff 10%,
+        #ccc 30%,
+        #ddd 50%,
+        #ccc 70%,
+        #fff 80%,
+        #999 95%
+      );
+
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      margin: 30px;
+      // height:400px;         /* Add some margin for spacing */
+      padding: 20px; /* Add padding for better appearance */
+      flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+      max-width: 90%;
+      border-radius: 10px; /* Ensure items don't exceed a certain width */
+      box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+      text-align: center; /* Center text inside the div */
+      border: 1px solid #ccc; /* Optional: Border for visibility */
+
+      .para {
+        height: 170px;
+        width: 100%;
+        // background-color: red;
+      }
+      .sicon {
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  header {
+    overflow: hidden;
+
+    .logo {
+        width: 100px;
+        margin-left: 140px;
+      }
+      button{
+        margin-right: 9rem;
+      }
+  }
+  .hero-section{
+    // background-color: red;
+    overflow: hidden;
+  height: 90vh;
+
+    .main-content{
+      top:40%;
+      div{
+        h1{
+          font-size: 60px;
+          line-height: 60px;
+          margin-bottom: 10px;
+        }
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+   .hand{
+    bottom: 20%;
+    left: 10%;
+   }
+  }
+  
+.sec-section {
+  height: 300px;
+  // background-color: red;
+  // overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-block: 0px;
+  padding-block: 20px;
+  p {
+    width: 90%;
+    padding-block: 30px;
+    margin: 0 auto;
+  }
+  .gearbox1 {
+    width: 100%;
+    overflow-y: hidden;
+    .gear3 {
+      width: 100px;
+      position: absolute;
+      
+      right: 20px;
+      bottom: -200px;
+      
+    }
+    .gear4 {
+      width: 70px;
+      position: absolute;
+      right: 95px;
+      bottom: -240px;
+    }
+  }
+}
+
+.gearbox {
+  height: 230px;
+  position: relative;
+  overflow-y: hidden;
+// background-color: red;
+  .gear1 {
+    width: 100px;
+    position: absolute;
+    left: 20px;
+    bottom:10px
+  }
+  .gear2 {
+    width: 70px;
+    position: absolute;
+    left: 110px;
+    top: 100px;
+  }
+}
+
+.third-section {
+  height: max-content;
+  padding-block: 50px;
+  overflow: hidden;
+
+  .m3 {
+    // background-color: red;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Ensure the items wrap on smaller screens */
+    // height: 100vh;
+    .m3-1,
+    .m3-2 {
+      background: linear-gradient(
+        45deg,
+        #999 5%,
+        #fff 10%,
+        #ccc 30%,
+        #ddd 50%,
+        #ccc 70%,
+        #fff 80%,
+        #999 95%
+      );
+
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      margin: 30px;
+      // height:400px;         /* Add some margin for spacing */
+      padding: 20px; /* Add padding for better appearance */
+      flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+      max-width: 90%;
+      border-radius: 10px; /* Ensure items don't exceed a certain width */
+      box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+      text-align: center; /* Center text inside the div */
+      border: 1px solid #ccc; /* Optional: Border for visibility */
+
+      .para {
+        height: 170px;
+        width: 100%;
+        // background-color: red;
+      }
+      .sicon {
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}

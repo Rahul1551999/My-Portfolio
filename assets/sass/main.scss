@@ -1,0 +1,586 @@
+$text-offwhite: #f5f5f5;
+$text-color: #273e58;
+
+body {
+  background: rgb(39, 62, 88);
+  background: radial-gradient(
+    circle at top left,
+    rgba(39, 62, 88, 1) 0%,
+    rgba(5, 6, 15, 1) 100%
+  );
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  // overflow: hidden;
+}
+
+.logo {
+  width: 100px;
+}
+header{
+  button{
+    margin-right: 2rem;
+  }
+}
+.hero-section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .hand {
+    width: 1000px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .animate__animated.animate__slideInRight {
+    --animate-duration: 3s;
+  }
+
+  .main-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      color: $text-offwhite;
+      font-size: 80px;
+    }
+
+    p {
+      font-size: 20px;
+      color: $text-offwhite;
+    }
+
+    .animate__animated.animate__fadeInDownBig {
+      --animate-duration: 3s;
+      --animate-delay: 1s;
+    }
+  }
+
+  .animate__animated.animate__fadeInTopLeft {
+    --animate-duration: 8s;
+    --animate-delay: 5s;
+  }
+
+  .animate__animated.animate__fadeInBottomLeft {
+    --animate-duration: 5s;
+    --animate-delay: 5s;
+  }
+
+  .container {
+    width: 100px; /* Adjusted to 100px */
+    height: 100px; /* Adjusted to 100px */
+    position: absolute;
+    perspective: 1000px;
+    margin: 100px auto 0;
+    left: 10%;
+
+    .cube {
+      transform-style: preserve-3d;
+      width: 100%; /* Adjusted to 100% */
+      height: 100%; /* Adjusted to 100% */
+      position: relative;
+      animation: spin 20s infinite linear;
+      will-change: transform;
+
+      .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(39, 62, 88, 0.2);
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5),
+          0 0 20px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        will-change: transform, box-shadow;
+      }
+
+      /* Applying styles to each face */
+      .top {
+        transform: rotateX(90deg) translateZ(50px); /* Adjusted to 50px */
+      }
+
+      .bottom {
+        transform: rotateX(-90deg) translateZ(50px); /* Adjusted to 50px */
+      }
+
+      .right {
+        transform: rotateY(90deg) translateZ(50px); /* Adjusted to 50px */
+      }
+
+      .left {
+        transform: rotateY(-90deg) translateZ(50px); /* Adjusted to 50px */
+      }
+
+      .front {
+        transform: rotateX(0deg) translateZ(50px); /* Adjusted to 50px */
+      }
+
+      .back {
+        transform: rotateY(180deg) translateZ(50px); /* Adjusted to 50px */
+      }
+    }
+  }
+
+  .container2 {
+    width: 80px; /* Adjusted to 100px */
+    height: 80px; /* Adjusted to 100px */
+    position: absolute;
+    perspective: 1000px;
+    margin: 100px auto 0;
+    right: 5%;
+    top: 20%;
+
+    .cube {
+      transform-style: preserve-3d;
+      width: 100%; /* Adjusted to 100% */
+      height: 100%; /* Adjusted to 100% */
+      position: relative;
+      animation: spin 10s infinite linear;
+      will-change: transform;
+
+      .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(39, 62, 88, 0.2);
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5),
+          0 0 20px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        will-change: transform, box-shadow;
+      }
+
+      /* Applying styles to each face */
+      .top {
+        transform: rotateX(90deg) translateZ(40px); /* Adjusted to 50px */
+      }
+
+      .bottom {
+        transform: rotateX(-90deg) translateZ(40px); /* Adjusted to 50px */
+      }
+
+      .right {
+        transform: rotateY(90deg) translateZ(40px); /* Adjusted to 50px */
+      }
+
+      .left {
+        transform: rotateY(-90deg) translateZ(40px); /* Adjusted to 50px */
+      }
+
+      .front {
+        transform: rotateX(0deg) translateZ(40px); /* Adjusted to 50px */
+      }
+
+      .back {
+        transform: rotateY(180deg) translateZ(40px); /* Adjusted to 50px */
+      }
+    }
+  }
+
+  .container3 {
+    width: 170px; /* Adjusted to 100px */
+    height: 170px; /* Adjusted to 100px */
+    position: absolute;
+    perspective: 1000px;
+    margin: 100px auto 0;
+    left: 20%;
+    bottom: -2%;
+
+    .cube {
+      transform-style: preserve-3d;
+      width: 100%; /* Adjusted to 100% */
+      height: 100%; /* Adjusted to 100% */
+      position: relative;
+      animation: spin 30s infinite linear;
+      will-change: transform;
+
+      .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(39, 62, 88, 0.2);
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5),
+          0 0 20px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        will-change: transform, box-shadow;
+      }
+
+      /* Applying styles to each face */
+      .top {
+        transform: rotateX(90deg) translateZ(84px); /* Adjusted to 50px */
+      }
+
+      .bottom {
+        transform: rotateX(-90deg) translateZ(84px); /* Adjusted to 50px */
+      }
+
+      .right {
+        transform: rotateY(90deg) translateZ(84px); /* Adjusted to 50px */
+      }
+
+      .left {
+        transform: rotateY(-90deg) translateZ(84px); /* Adjusted to 50px */
+      }
+
+      .front {
+        transform: rotateX(0deg) translateZ(84px); /* Adjusted to 50px */
+      }
+
+      .back {
+        transform: rotateY(180deg) translateZ(84px); /* Adjusted to 50px */
+      }
+    }
+  }
+
+  .container4 {
+    width: 50px; /* Adjusted to 100px */
+    height: 50px; /* Adjusted to 100px */
+    position: absolute;
+    perspective: 1000px;
+    margin: 100px auto 0;
+    left: 10%;
+    bottom: 20%;
+
+    .cube {
+      transform-style: preserve-3d;
+      width: 100%; /* Adjusted to 100% */
+      height: 100%; /* Adjusted to 100% */
+      position: relative;
+      animation: spin 13s infinite linear;
+      will-change: transform;
+
+      .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(39, 62, 88, 0.2);
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5),
+          0 0 20px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        will-change: transform, box-shadow;
+      }
+
+      /* Applying styles to each face */
+      .top {
+        transform: rotateX(90deg) translateZ(25px); /* Adjusted to 50px */
+      }
+
+      .bottom {
+        transform: rotateX(-90deg) translateZ(25px); /* Adjusted to 50px */
+      }
+
+      .right {
+        transform: rotateY(90deg) translateZ(25px); /* Adjusted to 50px */
+      }
+
+      .left {
+        transform: rotateY(-90deg) translateZ(25px); /* Adjusted to 50px */
+      }
+
+      .front {
+        transform: rotateX(0deg) translateZ(25px); /* Adjusted to 50px */
+      }
+
+      .back {
+        transform: rotateY(180deg) translateZ(25px); /* Adjusted to 50px */
+      }
+    }
+  }
+
+  /* Continuous spinning animation */
+  @keyframes spin {
+    from {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+}
+
+header {
+  background-color: transparent;
+}
+
+button {
+  color: rgb(39, 62, 88);
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(39, 62, 88);
+  }
+}
+
+.sec-section {
+  height: 300px;
+  // background-color: red;
+  // overflo: hidden;
+  width: 100%;
+  position: relative;
+  margin-block: 50px;
+  padding-block: 50px;
+  p {
+    width: 60%;
+    padding-block: 30px;
+    margin: 0 auto;
+  }
+  .gearbox1 {
+    width: 100%;
+    overflow-y: hidden;
+    .gear3 {
+      width: 200px;
+      position: absolute;
+      right: 50px;
+      bottom: -100px;
+    }
+    .gear4 {
+      width: 150px;
+      position: absolute;
+      right: 225px;
+      bottom: -150px;
+    }
+  }
+}
+
+.third-section {
+  height: 650px;
+  padding-block: 50px;
+  overflow: hidden;
+
+  .m3 {
+    // background-color: red;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Ensure the items wrap on smaller screens */
+    // height: 100vh;
+    .m3-1,
+    .m3-2 {
+      background: linear-gradient(
+        45deg,
+        #999 5%,
+        #fff 10%,
+        #ccc 30%,
+        #ddd 50%,
+        #ccc 70%,
+        #fff 80%,
+        #999 95%
+      );
+
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      margin: 30px;
+      // height:400px;         /* Add some margin for spacing */
+      padding: 50px; /* Add padding for better appearance */
+      flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+      max-width: 40%;
+      border-radius: 10px; /* Ensure items don't exceed a certain width */
+      box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+      text-align: center; /* Center text inside the div */
+      border: 1px solid #ccc; /* Optional: Border for visibility */
+      height: 500px;
+      .para {
+        height: 100px;
+        // background-color: red;
+      }
+      .sicon {
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.forth-section {
+  height: 400px;
+  // background-color: red;
+  margin-block: 50px;
+  padding-block: 50px;
+  overflow: hidden;
+
+  p {
+    width: 60%;
+    padding-block: 30px;
+    margin: 0 auto;
+  }
+  .convo {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+.gearbox {
+  height: 230px;
+  position: relative;
+  overflow-y: hidden;
+
+  .gear1 {
+    width: 150px;
+    position: absolute;
+    left: 20px;
+  }
+  .gear2 {
+    width: 200px;
+    position: absolute;
+    left: 160px;
+    top: 11px;
+  }
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  // display: flex;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  animation: popup 0.4s;
+  .modal-head {
+    width: 100%;
+    background-color: #273e58;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    .close {
+      color: white;
+      right: 20px;
+      // float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      position: absolute;
+    }
+  }
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  label {
+    color: #273e58;
+    padding-left: 5px;
+  }
+  input {
+    // background-color: red;
+    width: 100%;
+    height: 50px;
+    padding-top: 1px;
+    padding-right: 15px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #eeeeee;
+    border-right-color: #eeeeee;
+    border-bottom-color: #eeeeee;
+    border-left-color: #eeeeee;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    font-size: 16px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    &::placeholder {
+      color: #dadada;
+    }
+    &:focus {
+      outline-color: initial;
+      outline-style: none;
+      outline-width: initial;
+    }
+    
+  }
+  button {
+    width: 100%;
+    background-color: #03a9f4;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: outset;
+    border-right-style: outset;
+    border-bottom-style: outset;
+    border-left-style: outset;
+    border-top-color: #767676;
+    border-right-color: #767676;
+    border-bottom-color: #767676;
+    border-left-color: #767676;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-top-left-radius: 64px;
+    border-top-right-radius: 64px;
+    border-bottom-right-radius: 64px;
+    border-bottom-left-radius: 64px;
+  }
+}
