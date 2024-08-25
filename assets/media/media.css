@@ -107,6 +107,8 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     margin: 30px;
+    height: -moz-fit-content;
+    height: fit-content; /* Add some margin for spacing */
     padding: 20px; /* Add padding for better appearance */
     flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
     max-width: 90%;
