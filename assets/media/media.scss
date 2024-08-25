@@ -14,6 +14,21 @@
       button{
         margin-right: 1rem;
       }
+      .left_img{
+        width: 40%;
+        margin-left: -10px;
+        margin-top: -30px;
+        animation: float-up 3s ease-in-out infinite;
+    
+      }
+      .right_img{
+        width: 40%;
+
+        margin-right: -10px;
+        margin-top: -30px;
+        animation: float-down 3s ease-in-out infinite;
+    
+      }
   }
   .hero-section{
     // background-color: red;
