@@ -5,6 +5,25 @@ body {
   font-optical-sizing: auto;
 }
 
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  display: none;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #000 rgba(0, 0, 0, 0);
+  animation: l1 1s infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes l1 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}
 .logo {
   width: 100px;
 }
