@@ -101,9 +101,14 @@
     text-align: center; /* Center text inside the div */
     border: 1px solid #ccc; /* Optional: Border for visibility */
   }
+  .third-section .m3 .m3-1 h3,
+  .third-section .m3 .m3-2 h3 {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
   .third-section .m3 .m3-1 .para,
   .third-section .m3 .m3-2 .para {
-    height: 170px;
+    height: 150px;
     width: 100%;
   }
   .third-section .m3 .m3-1 .sicon,
