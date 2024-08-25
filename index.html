@@ -395,9 +395,11 @@
             <input type="email" id="email" name="email" required /><br />
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" required /><br />
-            <button type="submit"  value="Submit">
-              Submit
+            <button type="submit" id="submitBtn">
+              <span id="submitText">Submit</span>
+              <div class="button-loader" id="buttonLoader" style="display: none;"></div>
             </button>
+            
           </form>
 
           <script
@@ -405,14 +407,19 @@
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
           ></script>
           <script>
-            function loader() {
-            }
+            function loader() {}
             (function () {
               emailjs.init("1E_kW1vSJCoEEH0J7"); // Replace with your EmailJS user ID
             })();
 
             function sendEmail() {
-              document.getElementById("loader").style.display = "block";
+              var submitText = document.getElementById("submitText");
+  var buttonLoader = document.getElementById("buttonLoader");
+
+  // Hide the submit text and show the loader
+  submitText.style.display = "none";
+  buttonLoader.style.display = "block";
+
 
               var templateParams = {
                 fullName: document.getElementById("fullName").value,
@@ -431,7 +438,9 @@
                       text: "I will get back to you soon",
                       icon: "success",
                     });
-                    document.getElementById("loader").style.display = "none";
+                    // Hide loader and show submit text after success
+                    buttonLoader.style.display = "none";
+                    submitText.style.display = "inline";
                   },
                   function (error) {
                     console.log("FAILED...", error);
@@ -440,10 +449,13 @@
                       title: "Oops...",
                       text: "Message sending failed",
                     });
+                           // Hide loader and show submit text after failure
+         // Restore the button state
+         buttonLoader.style.display = "none";
+        submitText.style.display = "inline";
                   }
                 );
-              document.getElementById("loader").style.display = "none";
-
+       
               document.getElementById("contact-form").reset();
             }
           </script>
