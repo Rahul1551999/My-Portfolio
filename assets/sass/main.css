@@ -10,7 +10,10 @@ body {
 }
 
 header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  background-color: red;
+  overflow: hidden;
 }
 @keyframes float-up {
   0% {
@@ -38,11 +41,13 @@ header .left_img {
   margin-left: -20px;
   margin-top: -60px;
   animation: float-up 3s ease-in-out infinite;
+  z-index: 0;
 }
 header .right_img {
   margin-right: -20px;
   margin-top: -60px;
   animation: float-down 3s ease-in-out infinite;
+  z-index: 0;
 }
 
 .hero-section {

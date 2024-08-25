@@ -15,12 +15,14 @@
     margin-left: -10px;
     margin-top: -30px;
     animation: float-up 3s ease-in-out infinite;
+    z-index: 0;
   }
   header .right_img {
     width: 40%;
     margin-right: -10px;
     margin-top: -30px;
     animation: float-down 3s ease-in-out infinite;
+    z-index: 0;
   }
   .hero-section {
     height: 100vh;
