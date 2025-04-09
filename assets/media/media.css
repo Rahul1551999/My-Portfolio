@@ -1,271 +1,301 @@
-/* Mobile Styles */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.5em;
-  }
-  header .logo {
-    width: 50px;
-    margin-left: 20px;
-  }
-  header button {
-    margin-right: 1rem;
-  }
-  header .left_img {
-    width: 40%;
-    margin-left: -10px;
-    margin-top: -30px;
-    animation: float-up 3s ease-in-out infinite;
-    z-index: 0;
-  }
-  header .right_img {
-    width: 40%;
-    margin-right: -10px;
-    margin-top: -30px;
-    animation: float-down 3s ease-in-out infinite;
-    z-index: 0;
-  }
-  .hero-section {
-    height: 100vh;
-  }
-  .hero-section .main-content {
-    top: 40%;
-  }
-  .hero-section .main-content div h1 {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 10px;
-  }
-  .hero-section .main-content div p {
-    font-size: 18px;
-  }
-  .hero-section .hand {
-    bottom: 20%;
-    left: 10%;
-  }
-  .sec-section {
-    height: 300px;
-    width: 100%;
-    position: relative;
-    margin-block: 0px;
-    padding-block: 20px;
-  }
-  .sec-section p {
-    width: 90%;
-    padding-block: 30px;
-    margin: 0 auto;
-  }
-  .sec-section .gearbox1 {
-    width: 100%;
-    overflow-y: hidden;
-  }
-  .sec-section .gearbox1 .gear3 {
-    width: 100px;
-    position: absolute;
-    right: 20px;
-    bottom: -200px;
-  }
-  .sec-section .gearbox1 .gear4 {
-    width: 70px;
-    position: absolute;
-    right: 95px;
-    bottom: -240px;
-  }
-  .gearbox {
-    height: 230px;
-    position: relative;
-    overflow-y: hidden;
-  }
-  .gearbox .gear1 {
-    width: 100px;
-    position: absolute;
-    left: 20px;
-    bottom: 10px;
-  }
-  .gearbox .gear2 {
-    width: 70px;
-    position: absolute;
-    left: 110px;
-    top: 100px;
-  }
-  .third-section {
-    height: -moz-max-content;
-    height: max-content;
-    padding-block: 50px;
-    overflow: hidden;
-  }
-  .third-section .m3 {
-    display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    flex-wrap: wrap; /* Ensure the items wrap on smaller screens */
-  }
-  .third-section .m3 .m3-1,
-  .third-section .m3 .m3-2 {
-    background: linear-gradient(45deg, #999 5%, #fff 10%, #ccc 30%, #ddd 50%, #ccc 70%, #fff 80%, #999 95%);
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    margin: 30px;
-    height: -moz-fit-content;
-    height: fit-content; /* Add some margin for spacing */
-    padding: 20px; /* Add padding for better appearance */
-    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
-    max-width: 90%;
-    border-radius: 10px; /* Ensure items don't exceed a certain width */
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-    text-align: center; /* Center text inside the div */
-    border: 1px solid #ccc; /* Optional: Border for visibility */
-  }
-  .third-section .m3 .m3-1 h3,
-  .third-section .m3 .m3-2 h3 {
-    font-size: 20px;
-    padding-bottom: 5px;
-  }
-  .third-section .m3 .m3-1 .para,
-  .third-section .m3 .m3-2 .para {
-    height: 150px;
-    width: 100%;
-  }
-  .third-section .m3 .m3-1 .sicon,
-  .third-section .m3 .m3-2 .sicon {
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    margin: 0 auto;
+@media (max-width: 1400px) {
+  .hero-section .main-content h1 {
+    font-size: 70px;
   }
 }
-/* Tablet Styles */
-@media (min-width: 601px) and (max-width: 1024px) {
-  h1 {
-    font-size: 1.5em;
-  }
-  header {
-    overflow: hidden;
-  }
-  header .logo {
-    width: 100px;
-    margin-left: 140px;
-  }
-  header button {
-    margin-right: 9rem;
-  }
+@media (max-width: 1200px) {
   .hero-section {
-    overflow: hidden;
+    height: 80vh;
+  }
+  .hero-section .main-content h1 {
+    margin-top: 200px;
+    font-size: 100px;
+    line-height: 90px;
+  }
+  .hero-section .main-content p {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .hero-section .hand {
+    width: 800px;
+    bottom: 10%;
+  }
+  .sec-section {
+    height: 400px;
+  }
+  .sec-section h2 {
+    font-size: 40px;
+  }
+  .sec-section p {
+    font-size: 20px;
+    width: 90%;
+  }
+  .sec-section .gearbox1 {
+    margin-top: 100px;
+  }
+  .third-section {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .third-section .m3 .m3-1, .third-section .m3 .m3-2 {
+    max-width: 45%;
+  }
+}
+@media (max-width: 992px) {
+  .hero-section {
+    height: 80vh;
+  }
+  .hero-section .main-content {
+    margin-top: 200px;
+  }
+  .hero-section .main-content h1 {
+    font-size: 150px;
+    line-height: 140px;
+  }
+  .hero-section .main-content p {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  .hero-section .hand {
+    width: 600px;
+    bottom: 15%;
+  }
+  .sec-section {
+    max-width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .sec-section h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .sec-section p {
+    font-size: 30px;
+    width: 90%;
+  }
+  .sec-section .gearbox1 .gear4 {
+    right: 10%;
+    top: 30%;
+  }
+  .sec-section .gearbox1 .gear3 {
+    right: -15%;
+    top: -40%;
+  }
+  .third-section {
+    height: auto;
+    padding-bottom: 100px;
+    max-width: 100%;
+  }
+  .third-section .m3 {
+    flex-direction: column;
+  }
+  .third-section .m3 .m3-1, .third-section .m3 .m3-2 {
+    max-width: 80%;
+    height: auto;
+    margin: 15px auto;
+  }
+  .third-section .m3 .m3-1 p, .third-section .m3 .m3-2 p {
+    font-size: 20px;
+  }
+  .forth-section {
+    height: auto;
+    padding-bottom: 100px;
+    max-width: 100%;
+  }
+  .forth-section p {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section .main-content {
+    top: 35%;
+  }
+  .hero-section .main-content h1 {
+    font-size: 40px;
+  }
+  .hero-section .main-content p {
+    font-size: 16px;
+  }
+  .hero-section .hand {
+    width: 500px;
+  }
+  .hero-section .container, .hero-section .container2, .hero-section .container3, .hero-section .container4 {
+    display: none;
+  }
+  .sec-section {
+    height: auto;
+    margin-block: 50px;
+  }
+  .sec-section p {
+    width: 80%;
+  }
+  .sec-section .gearbox1 .gear3, .sec-section .gearbox1 .gear4 {
+    width: 150px;
+  }
+  .sec-section .gearbox1 .gear4 {
+    right: 175px;
+  }
+  .third-section .m3 .m3-1, .third-section .m3 .m3-2 {
+    max-width: 90%;
+    padding: 20px;
+  }
+  .gearbox {
+    height: 180px;
+  }
+  .gearbox .gear1 {
+    width: 120px;
+  }
+  .gearbox .gear2 {
+    width: 160px;
+    left: 130px;
+  }
+}
+@media (max-width: 576px) {
+  .hero-section {
     height: 90vh;
   }
   .hero-section .main-content {
-    top: 40%;
+    width: 90%;
   }
-  .hero-section .main-content div h1 {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 10px;
-  }
-  .hero-section .main-content div p {
-    font-size: 18px;
+  .hero-section .main-content h1 {
+    font-size: 32px;
   }
   .hero-section .hand {
-    bottom: 20%;
-    left: 10%;
+    width: 400px;
   }
-  .sec-section {
-    height: 300px;
-    width: 100%;
-    position: relative;
-    margin-block: 0px;
-    padding-block: 20px;
+  header .left_img, header .right_img {
+    width: 150px;
+    margin-top: -40px;
   }
   .sec-section p {
     width: 90%;
-    padding-block: 30px;
-    margin: 0 auto;
-  }
-  .sec-section .gearbox1 {
-    width: 100%;
-    overflow-y: hidden;
   }
   .sec-section .gearbox1 .gear3 {
-    width: 100px;
-    position: absolute;
+    width: 120px;
     right: 20px;
-    bottom: -200px;
   }
   .sec-section .gearbox1 .gear4 {
-    width: 70px;
-    position: absolute;
-    right: 95px;
-    bottom: -240px;
+    width: 100px;
+    right: 140px;
+  }
+  .third-section .m3 .m3-1, .third-section .m3 .m3-2 {
+    max-width: 95%;
+    margin: 10px auto;
   }
   .gearbox {
-    height: 230px;
-    position: relative;
-    overflow-y: hidden;
+    height: 150px;
   }
   .gearbox .gear1 {
     width: 100px;
-    position: absolute;
-    left: 20px;
-    bottom: 10px;
+  }
+  .gearbox .gear2 {
+    width: 130px;
+    left: 100px;
+  }
+  .create-account-container {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 0px;
+  }
+  .hero-section .main-content h1 {
+    font-size: 80px;
+    line-height: 70px;
+    margin-top: 200px;
+  }
+  .hero-section .main-content p {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .hero-section .hand {
+    width: 400px;
+    left: 10%;
+    bottom: 10%;
+  }
+  .third-section .m3 {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .third-section .m3 .m3-2 {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .third-section .m3 .para {
+    padding-inline: 5px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  header .left_img, header .right_img {
+    width: 120px;
+    margin-top: -10px;
+  }
+  .sec-section {
+    margin-block: 30px;
+  }
+  .sec-section h2, .sec-section p {
+    padding-inline: 25px;
+  }
+  .sec-section .gearbox1 .gear3 {
+    width: 70px;
+    bottom: -80px;
+  }
+  .sec-section .gearbox1 .gear4 {
+    width: 60px;
+    right: 70px;
+    bottom: -120px;
+  }
+  .gearbox {
+    height: 120px;
+  }
+  .gearbox .gear1 {
+    width: 60px;
+    left: 10px;
   }
   .gearbox .gear2 {
     width: 70px;
-    position: absolute;
-    left: 110px;
-    top: 100px;
+    left: 65px;
   }
-  .third-section {
-    height: -moz-max-content;
-    height: max-content;
-    padding-block: 50px;
-    overflow: hidden;
-  }
-  .third-section .m3 {
-    display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    flex-wrap: wrap; /* Ensure the items wrap on smaller screens */
-  }
-  .third-section .m3 .m3-1,
-  .third-section .m3 .m3-2 {
-    background: linear-gradient(45deg, #999 5%, #fff 10%, #ccc 30%, #ddd 50%, #ccc 70%, #fff 80%, #999 95%);
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    margin: 30px;
-    padding: 20px; /* Add padding for better appearance */
-    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
-    max-width: 90%;
-    border-radius: 10px; /* Ensure items don't exceed a certain width */
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-    text-align: center; /* Center text inside the div */
-    border: 1px solid #ccc; /* Optional: Border for visibility */
-  }
-  .third-section .m3 .m3-1 .para,
-  .third-section .m3 .m3-2 .para {
-    height: 170px;
-    width: 100%;
-  }
-  .third-section .m3 .m3-1 .sicon,
-  .third-section .m3 .m3-2 .sicon {
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    margin: 0 auto;
+  .forth-section p {
+    width: 90%;
+    font-size: 14px;
   }
 }
-/* Desktop Styles */
-@media (min-width: 1025px) {
-  h1 {
-    font-size: 2em;
+@media (max-width: 320px) {
+  .hero-section .main-content h1 {
+    font-size: 24px;
   }
-  p {
-    font-size: 1.1em;
+  header .left_img, header .right_img {
+    width: 100px;
+    margin-top: -20px;
   }
-  .container {
-    padding: 20px;
+  .sec-section .gearbox1 .gear3 {
+    width: 80px;
+    right: 10px;
+  }
+  .sec-section .gearbox1 .gear4 {
+    width: 60px;
+    right: 80px;
+  }
+  .gearbox .gear1 {
+    width: 70px;
+  }
+  .gearbox .gear2 {
+    width: 90px;
+    left: 70px;
+  }
+}
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero-section {
+    height: auto;
+    min-height: 100vh;
+  }
+  .hero-section .main-content {
+    top: 40%;
+  }
+  .hero-section .hand {
+    width: 400px;
   }
 }/*# sourceMappingURL=media.css.map */
