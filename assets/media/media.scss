@@ -292,7 +292,7 @@ $breakpoint-xxl: 1400px;
       h1 {
         font-size: 80px;
         line-height: 70px;
-        margin-top: 200px;
+        margin-top: -200px;
       }
       
       p {
@@ -318,9 +318,12 @@ $breakpoint-xxl: 1400px;
       }
       .para{
         padding-inline: 5px;
-        // background-color: red;
+        font-size: 10px;
         height: fit-content;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+      }
+      h4{
+        font-size: 20px;
       }
     }
   }
@@ -333,19 +336,24 @@ $breakpoint-xxl: 1400px;
   
   .sec-section {
     margin-block: 30px;
-    h2,p{
+    h2{
       padding-inline: 25px;
+      font-size: 30px;
+      line-height: 30px;
+    }
+    p{
+      font-size: 20px;
     }
     .gearbox1 {
       .gear3 {
-        width: 70px;
-        bottom: -80px;
+        width: 100px;
+        top:0;
       }
       
       .gear4 {
         width: 60px;
-        right: 70px;
-        bottom: -120px;
+        right: 110px;
+        bottom: 0px;
       }
     }
   }
@@ -354,13 +362,14 @@ $breakpoint-xxl: 1400px;
     height: 120px;
     
     .gear1 {
-      width: 60px;
+      width: 100px;
       left: 10px;
     }
     
     .gear2 {
       width: 70px;
-      left: 65px;
+      left: 100px;
+      top:40px
     }
   }
   

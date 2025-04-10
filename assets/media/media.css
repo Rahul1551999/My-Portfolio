@@ -203,7 +203,7 @@
   .hero-section .main-content h1 {
     font-size: 80px;
     line-height: 70px;
-    margin-top: 200px;
+    margin-top: -200px;
   }
   .hero-section .main-content p {
     font-size: 25px;
@@ -224,9 +224,13 @@
   }
   .third-section .m3 .para {
     padding-inline: 5px;
+    font-size: 10px;
     height: -moz-fit-content;
     height: fit-content;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+  }
+  .third-section .m3 h4 {
+    font-size: 20px;
   }
   header .left_img, header .right_img {
     width: 120px;
@@ -235,28 +239,34 @@
   .sec-section {
     margin-block: 30px;
   }
-  .sec-section h2, .sec-section p {
+  .sec-section h2 {
     padding-inline: 25px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .sec-section p {
+    font-size: 20px;
   }
   .sec-section .gearbox1 .gear3 {
-    width: 70px;
-    bottom: -80px;
+    width: 100px;
+    top: 0;
   }
   .sec-section .gearbox1 .gear4 {
     width: 60px;
-    right: 70px;
-    bottom: -120px;
+    right: 110px;
+    bottom: 0px;
   }
   .gearbox {
     height: 120px;
   }
   .gearbox .gear1 {
-    width: 60px;
+    width: 100px;
     left: 10px;
   }
   .gearbox .gear2 {
     width: 70px;
-    left: 65px;
+    left: 100px;
+    top: 40px;
   }
   .forth-section p {
     width: 90%;
