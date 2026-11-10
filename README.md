@@ -4,7 +4,7 @@ Welcome to my personal portfolio website!
 This project showcases my skills, projects, and professional background using modern web technologies, smooth animations, and a clean responsive design.
 
 ## 🌐 Live Demo
-👉 [View Portfolio](https://rahulmestry.com)
+👉 [View Portfolio](https://rahulmestry.pro)
 
 ---
 
